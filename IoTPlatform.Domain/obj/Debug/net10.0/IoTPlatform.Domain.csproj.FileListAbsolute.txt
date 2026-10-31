@@ -1,0 +1,12 @@
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/bin/Debug/net10.0/IoTPlatform.Domain.deps.json
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/bin/Debug/net10.0/IoTPlatform.Domain.dll
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/bin/Debug/net10.0/IoTPlatform.Domain.pdb
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/obj/Debug/net10.0/IoTPlatform.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/obj/Debug/net10.0/IoTPlatform.Domain.AssemblyInfoInputs.cache
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/obj/Debug/net10.0/IoTPlatform.Domain.AssemblyInfo.cs
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/obj/Debug/net10.0/IoTPlatform.Domain.csproj.CoreCompileInputs.cache
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/obj/Debug/net10.0/IoTPlatform.Domain.sourcelink.json
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/obj/Debug/net10.0/IoTPlatform.Domain.dll
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/obj/Debug/net10.0/refint/IoTPlatform.Domain.dll
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/obj/Debug/net10.0/IoTPlatform.Domain.pdb
+/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.Domain/obj/Debug/net10.0/ref/IoTPlatform.Domain.dll

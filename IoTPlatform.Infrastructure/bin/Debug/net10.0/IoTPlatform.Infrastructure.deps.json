@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "IoTPlatform.Infrastructure/1.0.0": {
+        "dependencies": {
+          "IoTPlatform.Application": "1.0.0",
+          "IoTPlatform.Domain": "1.0.0"
+        },
+        "runtime": {
+          "IoTPlatform.Infrastructure.dll": {}
+        }
+      },
+      "IoTPlatform.Application/1.0.0": {
+        "dependencies": {
+          "IoTPlatform.Domain": "1.0.0"
+        },
+        "runtime": {
+          "IoTPlatform.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "IoTPlatform.Domain/1.0.0": {
+        "runtime": {
+          "IoTPlatform.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IoTPlatform.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IoTPlatform.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IoTPlatform.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
