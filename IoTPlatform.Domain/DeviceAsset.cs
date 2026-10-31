@@ -1,5 +1,4 @@
 using System;
-using System.Text.RegularExpressions;
 
 namespace IoTPlatform.Domain
 {
@@ -19,9 +18,6 @@ namespace IoTPlatform.Domain
         public string Location { get; private set; }
         public AssetStatus Status { get; private set; }
         public DateTime CreatedAtUtc { get; private set; }
-
-        // Regex mask for serial number format: e.g., CNC-1234-5678
-        private static readonly Regex SerialNumberRegex = new(@"^[A-Z]{3}-\d{4}-\d{4}$", RegexOptions.Compiled);
 
         public DeviceAsset(string name, string serialNumber, string assetType, string location)
         {
@@ -43,8 +39,45 @@ namespace IoTPlatform.Domain
 
         public void SetSerialNumber(string serialNumber)
         {
-            if (!SerialNumberRegex.IsMatch(serialNumber))
+            // Format requirement: ABC-1234-5678 (Total length = 13 characters)
+            if (string.IsNullOrWhiteSpace(serialNumber) || serialNumber.Length != 13)
+            {
                 throw new ArgumentException("Serial number must follow the format mask: ABC-1234-5678.", nameof(serialNumber));
+            }
+
+            // Check that dashes are at index 3 and index 8
+            if (serialNumber[3] != '-' || serialNumber[8] != '-')
+            {
+                throw new ArgumentException("Serial number must contain dashes at the correct positions.", nameof(serialNumber));
+            }
+
+            // Check that the first 3 characters are uppercase letters (indices 0, 1, 2)
+            for (int i = 0; i < 3; i++)
+            {
+                if (!char.IsUpper(serialNumber[i]))
+                {
+                    throw new ArgumentException("The first 3 characters of the serial number must be uppercase letters.", nameof(serialNumber));
+                }
+            }
+
+            // Check that the first digit group consists of numbers (indices 4, 5, 6, 7)
+            for (int i = 4; i <= 7; i++)
+            {
+                if (!char.IsDigit(serialNumber[i]))
+                {
+                    throw new ArgumentException("The first number block of the serial number must be digits.", nameof(serialNumber));
+                }
+            }
+
+            // Check that the final digit group consists of numbers (indices 9, 10, 11, 12)
+            for (int i = 9; i <= 12; i++)
+            {
+                if (!char.IsDigit(serialNumber[i]))
+                {
+                    throw new ArgumentException("The final number block of the serial number must be digits.", nameof(serialNumber));
+                }
+            }
+
             SerialNumber = serialNumber;
         }
 
@@ -64,8 +97,6 @@ namespace IoTPlatform.Domain
 
         public void UpdateStatus(AssetStatus newStatus)
         {
-            // Enforce business lifecycle rules:
-            // Cannot go straight from Decommissioned back to Active without proper transition rules.
             if (Status == AssetStatus.Decommissioned && newStatus == AssetStatus.Active)
             {
                 throw new InvalidOperationException("Cannot transition an asset directly from Decommissioned to Active.");

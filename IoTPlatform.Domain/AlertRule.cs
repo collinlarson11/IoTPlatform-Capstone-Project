@@ -23,7 +23,7 @@ namespace IoTPlatform.Domain
         public void SetMetricName(string metricName)
         {
             if (string.IsNullOrWhiteSpace(metricName))
-                throw new ArgumentException("Metric name cannot be null or empty.", nameof(metricName));
+                throw new ArgumentException("Metric name cannot be empty.", nameof(metricName));
             MetricName = metricName;
         }
 
@@ -31,6 +31,7 @@ namespace IoTPlatform.Domain
         {
             if (warningThreshold < 0 || criticalThreshold < 0)
                 throw new ArgumentException("Thresholds must be positive values.");
+
             if (criticalThreshold <= warningThreshold)
                 throw new ArgumentException("Critical threshold must be strictly greater than warning threshold.");
 

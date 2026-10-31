@@ -9,7 +9,7 @@ namespace IoTPlatform.Domain
         public string MetricName { get; private set; }
         public double Value { get; private set; }
         public string Unit { get; private set; }
-        public DateTime TimestampUtc { get; private set; }
+        public DateTime RecordedAtUtc { get; private set; }
 
         public TelemetryMetric(Guid deviceAssetId, string metricName, double value, string unit)
         {
@@ -18,28 +18,27 @@ namespace IoTPlatform.Domain
             SetMetricName(metricName);
             SetValue(value);
             SetUnit(unit);
-            TimestampUtc = DateTime.UtcNow;
+            RecordedAtUtc = DateTime.UtcNow;
         }
 
         public void SetMetricName(string metricName)
         {
             if (string.IsNullOrWhiteSpace(metricName))
-                throw new ArgumentException("Metric name cannot be null or empty.", nameof(metricName));
+                throw new ArgumentException("Metric name cannot be empty.", nameof(metricName));
             MetricName = metricName;
         }
 
         public void SetValue(double value)
         {
-            // Enforce business invariant: operating limits must be positive ranges[cite: 2, 8]
             if (value < 0)
-                throw new ArgumentOutOfRangeException(nameof(value), "Telemetry metric value must be a positive number.");
+                throw new ArgumentOutOfRangeException(nameof(value), "Telemetry metric value cannot be negative.");
             Value = value;
         }
 
         public void SetUnit(string unit)
         {
             if (string.IsNullOrWhiteSpace(unit))
-                throw new ArgumentException("Unit cannot be null or empty.", nameof(unit));
+                throw new ArgumentException("Unit cannot be empty.", nameof(unit));
             Unit = unit;
         }
     }
