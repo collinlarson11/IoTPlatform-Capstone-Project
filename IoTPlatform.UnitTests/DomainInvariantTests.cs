@@ -25,10 +25,17 @@ namespace IoTPlatform.UnitTests
         public void DeviceAsset_WithInvalidSerialNumber_ShouldThrowException(string invalidSerial)
         {
             // Act & Assert
-            Assert.ThrowsException<ArgumentException>(() =>
+            bool exceptionThrown = false;
+            try
             {
                 var asset = new DeviceAsset("CNC Mill", invalidSerial, "Milling", "Floor A");
-            });
+            }
+            catch (ArgumentException)
+            {
+                exceptionThrown = true;
+            }
+
+            Assert.IsTrue(exceptionThrown, "Expected ArgumentException was not thrown.");
         }
 
         [TestMethod]
@@ -39,10 +46,17 @@ namespace IoTPlatform.UnitTests
             asset.UpdateStatus(AssetStatus.Decommissioned);
 
             // Act & Assert
-            Assert.ThrowsException<InvalidOperationException>(() =>
+            bool exceptionThrown = false;
+            try
             {
                 asset.UpdateStatus(AssetStatus.Active);
-            });
+            }
+            catch (InvalidOperationException)
+            {
+                exceptionThrown = true;
+            }
+
+            Assert.IsTrue(exceptionThrown, "Expected InvalidOperationException was not thrown.");
         }
 
         [TestMethod]
@@ -52,10 +66,17 @@ namespace IoTPlatform.UnitTests
             var assetId = Guid.NewGuid();
 
             // Act & Assert
-            Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
+            bool exceptionThrown = false;
+            try
             {
                 var metric = new TelemetryMetric(assetId, "SpindleSpeed", -150.0, "RPM");
-            });
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                exceptionThrown = true;
+            }
+
+            Assert.IsTrue(exceptionThrown, "Expected ArgumentOutOfRangeException was not thrown.");
         }
 
         [TestMethod]
@@ -65,10 +86,17 @@ namespace IoTPlatform.UnitTests
             var assetId = Guid.NewGuid();
 
             // Act & Assert
-            Assert.ThrowsException<ArgumentException>(() =>
+            bool exceptionThrown = false;
+            try
             {
                 var rule = new AlertRule(assetId, "Vibration", 50.0, 30.0);
-            });
+            }
+            catch (ArgumentException)
+            {
+                exceptionThrown = true;
+            }
+
+            Assert.IsTrue(exceptionThrown, "Expected ArgumentException was not thrown.");
         }
     }
 }
