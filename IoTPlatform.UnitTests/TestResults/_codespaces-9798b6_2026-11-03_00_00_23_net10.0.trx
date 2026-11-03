@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="d3a45a02-8d05-4ab9-aa45-6eeb5b83c839" name="@codespaces-9798b6 2026-11-03 00:00:23" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-03T00:00:23.6187147+00:00" queuing="2026-11-03T00:00:23.6187148+00:00" start="2026-11-03T00:00:22.2841902+00:00" finish="2026-11-03T00:00:23.6317476+00:00" />
+  <TestSettings name="default" id="79159741-c560-4349-8706-dca9bbc6fea4">
+    <Deployment runDeploymentRoot="_codespaces-9798b6_2026-11-03_00_00_23" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="19e61a27-d33b-4172-b6de-6ddd947f8af8" testId="1b1be82a-44f3-8f7c-b284-f34a3cc7a805" testName="DeviceAsset_WithInvalidSerialNumber_ShouldThrowException (&quot;cnc-1004-9988&quot;)" computerName="codespaces-9798b6" duration="00:00:00.0002315" startTime="2026-11-03T00:00:23.4232348+00:00" endTime="2026-11-03T00:00:23.4235881+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19e61a27-d33b-4172-b6de-6ddd947f8af8" />
+    <UnitTestResult executionId="523b4c33-e0e9-4558-95b2-57aaacd604f8" testId="15342849-532f-8947-bb3a-ad0639eef6eb" testName="DeviceAsset_WithInvalidSerialNumber_ShouldThrowException (&quot;INVALID&quot;)" computerName="codespaces-9798b6" duration="00:00:00.0138936" startTime="2026-11-03T00:00:23.3721411+00:00" endTime="2026-11-03T00:00:23.4161417+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="523b4c33-e0e9-4558-95b2-57aaacd604f8" />
+    <UnitTestResult executionId="ee6eb308-9934-4e5d-992a-66d048f9025c" testId="1bef0f45-7680-8125-a711-683f43790d84" testName="AlertRule_CriticalThresholdLowerThanWarning_ShouldThrowException" computerName="codespaces-9798b6" duration="00:00:00.0009479" startTime="2026-11-03T00:00:23.4256204+00:00" endTime="2026-11-03T00:00:23.4288677+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee6eb308-9934-4e5d-992a-66d048f9025c" />
+    <UnitTestResult executionId="2cf2ec1b-b7a0-4ce3-9f8a-fd6c2a51769b" testId="1438ef7d-af7b-869d-b6b0-02d4a5857c60" testName="DeviceAsset_WithInvalidSerialNumber_ShouldThrowException (&quot;CNC-12-3456&quot;)" computerName="codespaces-9798b6" duration="00:00:00.0000273" startTime="2026-11-03T00:00:23.4239690+00:00" endTime="2026-11-03T00:00:23.4240812+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2cf2ec1b-b7a0-4ce3-9f8a-fd6c2a51769b" />
+    <UnitTestResult executionId="fc34a0bf-86d0-4c29-b918-9b2b21545caa" testId="1db9842e-6956-8d31-a52a-d8f7e65a1946" testName="TelemetryMetric_WithNegativeValue_ShouldThrowException" computerName="codespaces-9798b6" duration="00:00:00.0007059" startTime="2026-11-03T00:00:23.4248360+00:00" endTime="2026-11-03T00:00:23.4255944+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc34a0bf-86d0-4c29-b918-9b2b21545caa" />
+    <UnitTestResult executionId="6be044f9-5f2e-4cf0-81a2-9505eb5d452a" testId="1d6c9905-8cf9-8c21-8981-822c1dbc0312" testName="DeviceAsset_DecommissionedToActiveTransition_ShouldThrowException" computerName="codespaces-9798b6" duration="00:00:00.0003255" startTime="2026-11-03T00:00:23.4244145+00:00" endTime="2026-11-03T00:00:23.4248100+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6be044f9-5f2e-4cf0-81a2-9505eb5d452a" />
+    <UnitTestResult executionId="9bb3858d-2ab3-41ad-b65d-e919647356c1" testId="110e9c0a-5da2-8bd3-bba6-3b9fa5b3b1b7" testName="DeviceAsset_WithValidSerialNumber_ShouldSucceed" computerName="codespaces-9798b6" duration="00:00:00.0106255" startTime="2026-11-03T00:00:23.3718374+00:00" endTime="2026-11-03T00:00:23.4155552+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9bb3858d-2ab3-41ad-b65d-e919647356c1" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="AlertRule_CriticalThresholdLowerThanWarning_ShouldThrowException" storage="/workspaces/iotplatform-capstone-project/iotplatform.unittests/bin/debug/net10.0/iotplatform.unittests.dll" id="1bef0f45-7680-8125-a711-683f43790d84">
+      <Execution id="ee6eb308-9934-4e5d-992a-66d048f9025c" />
+      <TestMethod codeBase="/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.UnitTests/bin/Debug/net10.0/IoTPlatform.UnitTests.dll" adapterTypeName="executor://mstestadapter/v4" className="IoTPlatform.UnitTests.DomainInvariantTests" name="AlertRule_CriticalThresholdLowerThanWarning_ShouldThrowException" />
+    </UnitTest>
+    <UnitTest name="DeviceAsset_WithValidSerialNumber_ShouldSucceed" storage="/workspaces/iotplatform-capstone-project/iotplatform.unittests/bin/debug/net10.0/iotplatform.unittests.dll" id="110e9c0a-5da2-8bd3-bba6-3b9fa5b3b1b7">
+      <Execution id="9bb3858d-2ab3-41ad-b65d-e919647356c1" />
+      <TestMethod codeBase="/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.UnitTests/bin/Debug/net10.0/IoTPlatform.UnitTests.dll" adapterTypeName="executor://mstestadapter/v4" className="IoTPlatform.UnitTests.DomainInvariantTests" name="DeviceAsset_WithValidSerialNumber_ShouldSucceed" />
+    </UnitTest>
+    <UnitTest name="DeviceAsset_WithInvalidSerialNumber_ShouldThrowException (&quot;INVALID&quot;)" storage="/workspaces/iotplatform-capstone-project/iotplatform.unittests/bin/debug/net10.0/iotplatform.unittests.dll" id="15342849-532f-8947-bb3a-ad0639eef6eb">
+      <Execution id="523b4c33-e0e9-4558-95b2-57aaacd604f8" />
+      <TestMethod codeBase="/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.UnitTests/bin/Debug/net10.0/IoTPlatform.UnitTests.dll" adapterTypeName="executor://mstestadapter/v4" className="IoTPlatform.UnitTests.DomainInvariantTests" name="DeviceAsset_WithInvalidSerialNumber_ShouldThrowException" />
+    </UnitTest>
+    <UnitTest name="DeviceAsset_DecommissionedToActiveTransition_ShouldThrowException" storage="/workspaces/iotplatform-capstone-project/iotplatform.unittests/bin/debug/net10.0/iotplatform.unittests.dll" id="1d6c9905-8cf9-8c21-8981-822c1dbc0312">
+      <Execution id="6be044f9-5f2e-4cf0-81a2-9505eb5d452a" />
+      <TestMethod codeBase="/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.UnitTests/bin/Debug/net10.0/IoTPlatform.UnitTests.dll" adapterTypeName="executor://mstestadapter/v4" className="IoTPlatform.UnitTests.DomainInvariantTests" name="DeviceAsset_DecommissionedToActiveTransition_ShouldThrowException" />
+    </UnitTest>
+    <UnitTest name="TelemetryMetric_WithNegativeValue_ShouldThrowException" storage="/workspaces/iotplatform-capstone-project/iotplatform.unittests/bin/debug/net10.0/iotplatform.unittests.dll" id="1db9842e-6956-8d31-a52a-d8f7e65a1946">
+      <Execution id="fc34a0bf-86d0-4c29-b918-9b2b21545caa" />
+      <TestMethod codeBase="/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.UnitTests/bin/Debug/net10.0/IoTPlatform.UnitTests.dll" adapterTypeName="executor://mstestadapter/v4" className="IoTPlatform.UnitTests.DomainInvariantTests" name="TelemetryMetric_WithNegativeValue_ShouldThrowException" />
+    </UnitTest>
+    <UnitTest name="DeviceAsset_WithInvalidSerialNumber_ShouldThrowException (&quot;CNC-12-3456&quot;)" storage="/workspaces/iotplatform-capstone-project/iotplatform.unittests/bin/debug/net10.0/iotplatform.unittests.dll" id="1438ef7d-af7b-869d-b6b0-02d4a5857c60">
+      <Execution id="2cf2ec1b-b7a0-4ce3-9f8a-fd6c2a51769b" />
+      <TestMethod codeBase="/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.UnitTests/bin/Debug/net10.0/IoTPlatform.UnitTests.dll" adapterTypeName="executor://mstestadapter/v4" className="IoTPlatform.UnitTests.DomainInvariantTests" name="DeviceAsset_WithInvalidSerialNumber_ShouldThrowException" />
+    </UnitTest>
+    <UnitTest name="DeviceAsset_WithInvalidSerialNumber_ShouldThrowException (&quot;cnc-1004-9988&quot;)" storage="/workspaces/iotplatform-capstone-project/iotplatform.unittests/bin/debug/net10.0/iotplatform.unittests.dll" id="1b1be82a-44f3-8f7c-b284-f34a3cc7a805">
+      <Execution id="19e61a27-d33b-4172-b6de-6ddd947f8af8" />
+      <TestMethod codeBase="/workspaces/IoTPlatform-Capstone-Project/IoTPlatform.UnitTests/bin/Debug/net10.0/IoTPlatform.UnitTests.dll" adapterTypeName="executor://mstestadapter/v4" className="IoTPlatform.UnitTests.DomainInvariantTests" name="DeviceAsset_WithInvalidSerialNumber_ShouldThrowException" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="1b1be82a-44f3-8f7c-b284-f34a3cc7a805" executionId="19e61a27-d33b-4172-b6de-6ddd947f8af8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15342849-532f-8947-bb3a-ad0639eef6eb" executionId="523b4c33-e0e9-4558-95b2-57aaacd604f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1bef0f45-7680-8125-a711-683f43790d84" executionId="ee6eb308-9934-4e5d-992a-66d048f9025c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1438ef7d-af7b-869d-b6b0-02d4a5857c60" executionId="2cf2ec1b-b7a0-4ce3-9f8a-fd6c2a51769b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1db9842e-6956-8d31-a52a-d8f7e65a1946" executionId="fc34a0bf-86d0-4c29-b918-9b2b21545caa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d6c9905-8cf9-8c21-8981-822c1dbc0312" executionId="6be044f9-5f2e-4cf0-81a2-9505eb5d452a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="110e9c0a-5da2-8bd3-bba6-3b9fa5b3b1b7" executionId="9bb3858d-2ab3-41ad-b65d-e919647356c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="7" executed="7" passed="7" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>Test Parallelization enabled for /workspaces/IoTPlatform-Capstone-Project/IoTPlatform.UnitTests/bin/Debug/net10.0/IoTPlatform.UnitTests.dll (Workers: 2, Scope: MethodLevel)
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
